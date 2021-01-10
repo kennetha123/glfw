@@ -1,10 +1,11 @@
 project "GLFW"
-  kind "StaticLib"
-  language "C"
-  staticruntime "on"
+	location ""
+	kind "StaticLib"
+	language "C"
+	staticruntime "on"
 
-  targetdir ("bin/" .. outputDir .. "/%{prj.name}")
-  objdir ("obj/" ..outputDir .. "/%{prj.name}")
+	targetdir ("project/bin" .. outputName)
+	objdir ("project/obj" .. outputName)
   
   files
   {
